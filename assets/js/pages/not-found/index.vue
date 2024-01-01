@@ -1,15 +1,11 @@
 <template>
-    <div class="w-full flex justify-center items-center">
-        <h1 class="text-9xl">404</h1>
+    <div class="tw-w-full tw-flex tw-justify-center tw-items-center">
+        <h1 class="tw-text-9xl">404</h1>
     </div>
 </template>
 
-<script>
-import {defineComponent} from 'vue'
+<script setup>
 
-export default defineComponent({
-    name: "index"
-})
 </script>
 
 <style scoped>

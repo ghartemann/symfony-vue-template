@@ -1,4 +1,4 @@
-# Symfony 6.2 + Vue 3 + Tailwind + Vuetify
+# Symfony 7 + Vue 3 + Tailwind + Vuetify
 
 ## Project setup
 

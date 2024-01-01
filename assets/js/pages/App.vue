@@ -1,13 +1,11 @@
 <template>
-    <router-view></router-view>
+    <div class="tw-h-full">
+        <router-view></router-view>
+    </div>
 </template>
 
-<script>
-import {defineComponent} from 'vue';
+<script setup>
 
-export default defineComponent({
-    name: "App"
-})
 </script>
 
 <style scoped>
