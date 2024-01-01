@@ -1,0 +1,45 @@
+{
+    "devDependencies": {
+        "@babel/core": "^7.17.0",
+        "@babel/preset-env": "^7.16.0",
+        "@hotwired/stimulus": "^3.0.0",
+        "@symfony/stimulus-bridge": "^3.2.0",
+        "@symfony/webpack-encore": "^4.0.0",
+        "core-js": "^3.23.0",
+        "regenerator-runtime": "^0.13.9",
+        "sass": "^1.62.1",
+        "sass-loader": "^13.2.2",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.0.4",
+        "vue": "^3",
+        "vue-loader": "^17.1.1",
+        "vue-template-compiler": "^2.7.14",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-notifier": "^1.15.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "homepage": ".",
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress",
+        "hot": "encore dev-server --host 127.0.0.1 --port 4000"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.2.96",
+        "autoprefixer": "^10.4.14",
+        "axios": "^1.4.0",
+        "dotenv": "^16.0.3",
+        "dotenv-webpack": "^8.0.1",
+        "moment": "^2.29.4",
+        "postcss": "^8.4.23",
+        "postcss-loader": "^7.3.0",
+        "tailwindcss": "^3.3.2",
+        "vue-axios": "^3.5.2",
+        "vue-router": "^4.1.6",
+        "vuetify": "^3.2.5"
+    }
+}
