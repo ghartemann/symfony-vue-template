@@ -70,6 +70,8 @@ Encore
         "@images": `${__dirname}/assets/images`,
         "@components": `${__dirname}/assets/js/components`,
         "@pages": `${__dirname}/assets/js/pages`,
+        "@composables": `${__dirname}/assets/js/composables`,
+        "@stores": `${__dirname}/assets/js/stores`
     })
 
     // uncomment if you use React
