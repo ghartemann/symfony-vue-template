@@ -2,7 +2,7 @@
 import './styles/app.scss';
 
 // start the Stimulus application
-import './bootstrap';
+// import './bootstrap';
 
 import { createApp } from 'vue';
 import App from '@pages/App.vue';
