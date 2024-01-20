@@ -1,8 +1,4 @@
-// any CSS you import will output into a single css file (app.scss in this case)
 import './styles/app.scss';
-
-// start the Stimulus application
-// import './bootstrap';
 
 import { createApp } from 'vue';
 import App from '@pages/App.vue';
@@ -17,7 +13,9 @@ import 'vuetify/styles';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+
 import '@mdi/font/css/materialdesignicons.css';
+
 import {createPinia} from "pinia";
 
 const vuetify = createVuetify({
