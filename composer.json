@@ -38,7 +38,6 @@
         "symfony/twig-bundle": "7.*",
         "symfony/validator": "7.*",
         "symfony/web-link": "7.*",
-        "symfony/webpack-encore-bundle": "^v2.1.1",
         "symfony/yaml": "7.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"

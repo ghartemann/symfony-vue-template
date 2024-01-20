@@ -1,0 +1,36 @@
+.v-data-table-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4px;
+  justify-content: flex-end;
+}
+
+.v-data-table-footer__items-per-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.v-data-table-footer__items-per-page > span {
+  padding-inline-end: 8px;
+}
+.v-data-table-footer__items-per-page > .v-select {
+  width: 90px;
+}
+
+.v-data-table-footer__info {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 116px;
+  padding: 0 16px;
+}
+
+.v-data-table-footer__pagination {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 16px;
+}
+
+.v-data-table-footer__page {
+  padding: 0 8px;
+}

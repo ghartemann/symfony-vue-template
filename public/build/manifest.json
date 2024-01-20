@@ -1,0 +1,11 @@
+{
+  "build/app.css": "http://127.0.0.1:4000/build/app.css",
+  "build/app.js": "http://127.0.0.1:4000/build/app.js",
+  "build/runtime.js": "http://127.0.0.1:4000/build/runtime.js",
+  "build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_mdi_font_css_materialdes-ec4003.css": "http://127.0.0.1:4000/build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_mdi_font_css_materialdes-ec4003.css",
+  "build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_mdi_font_css_materialdes-ec4003.js": "http://127.0.0.1:4000/build/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_mdi_font_css_materialdes-ec4003.js",
+  "build/fonts/materialdesignicons-webfont.eot": "http://127.0.0.1:4000/build/fonts/materialdesignicons-webfont.2146c3c8.eot",
+  "build/fonts/materialdesignicons-webfont.ttf?v=7.4.47": "http://127.0.0.1:4000/build/fonts/materialdesignicons-webfont.1fcc3627.ttf",
+  "build/fonts/materialdesignicons-webfont.woff?v=7.4.47": "http://127.0.0.1:4000/build/fonts/materialdesignicons-webfont.e55a20c8.woff",
+  "build/fonts/materialdesignicons-webfont.woff2?v=7.4.47": "http://127.0.0.1:4000/build/fonts/materialdesignicons-webfont.ec024da7.woff2"
+}
