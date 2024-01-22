@@ -1,37 +1,26 @@
 {
-    "devDependencies": {
-        "@babel/core": "^7.17.0",
-        "@babel/preset-env": "^7.16.0",
-        "core-js": "^3.23.0",
-        "regenerator-runtime": "^0.13.9",
-        "sass": "^1.69",
-        "sass-loader": "^13.3",
-        "ts-loader": "^9.4.2",
-        "typescript": "^5.0.4",
-        "vue": "^3.4",
-        "vue-loader": "^17.4",
-        "vue-template-compiler": "^2.7"
-    },
-    "license": "UNLICENSED",
     "private": true,
-    "homepage": ".",
-    "scripts": {},
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "vite": "^5.0",
+        "vite-plugin-symfony": "^6.3"
+    },
     "dependencies": {
-        "@mdi/font": "^7.4",
-        "animate.css": "^4.1.1",
-        "autoprefixer": "^10.4",
-        "axios": "^1.6",
-        "dotenv": "^16.3",
-        "moment": "^2.30",
+        "@mdi/font": "^7.4.47",
+        "@vitejs/plugin-vue": "^5.0.3",
+        "autoprefixer": "^10.4.17",
+        "axios": "^1.6.5",
         "pinia": "^2.1.7",
-        "postcss": "^8.4",
-        "postcss-loader": "^7.3",
-        "tailwindcss": "^3.4",
-        "vite": "^5.0.12",
-        "vite-plugin-compression": "^0.5.1",
-        "vite-plugin-imagemin": "^0.6.1",
-        "vue-axios": "^3.5",
-        "vue-router": "^4.2",
-        "vuetify": "^3.4"
+        "postcss": "^8.4.33",
+        "sass": "^1.70.0",
+        "sass-loader": "^14.0.0",
+        "tailwindcss": "^3.4.1",
+        "vue": "^3.4.15",
+        "vue-axios": "^3.5.2",
+        "vue-router": "^4.2.5",
+        "vuetify": "^3.5.1"
     }
 }

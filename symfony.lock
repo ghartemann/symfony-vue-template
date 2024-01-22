@@ -35,6 +35,18 @@
             "migrations/.gitignore"
         ]
     },
+    "pentatrion/vite-bundle": {
+        "version": "6.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "4d98e6cbe66f6cd2dadc8375b035c7a1c30100c0"
+        },
+        "files": [
+            "config/routes/dev/pentatrion_vite.yaml"
+        ]
+    },
     "sensio/framework-extra-bundle": {
         "version": "6.2",
         "recipe": {

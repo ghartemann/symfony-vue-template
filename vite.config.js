@@ -1,34 +1,36 @@
-import compress from 'vite-plugin-compression';
-import imageMin from 'vite-plugin-imagemin';
+import { defineConfig } from "vite";
+import symfonyPlugin from "vite-plugin-symfony";
+import tailwindcss from "tailwindcss";
+import postcss from "postcss";
 
-export default {
+export default defineConfig({
+    plugins: [
+        symfonyPlugin(),
+    ],
+    build: {
+        rollupOptions: {
+            input: {
+                app: "./assets/app.js"
+            },
+        }
+    },
+    resolve: {
+        alias: {
+            "@": `${__dirname}/assets`,
+            "@components": `${__dirname}/assets/js/components`,
+            "@pages": `${__dirname}/assets/js/pages`,
+            "@router": `${__dirname}/assets/js/router`,
+            "@store": `${__dirname}/assets/js/store`,
+            "@styles": `${__dirname}/assets/styles`,
+            "@templates": `${__dirname}/templates`,
+            "@images": `${__dirname}/assets/images`,
+        },
+    },
     css: {
         postcss: {
             plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-                require('postcss'),
+                postcss()
             ],
         },
     },
-    build: {
-    },
-    plugins: [
-        imageMin({
-            svgo: {
-                // https://github.com/svg/svgo#built-in-plugins
-                plugins: [
-                    { name: 'RemoveTitle', active: false },
-                    { name: 'RemoveDescription', active: false },
-                    { name: 'RemoveViewBox', active: false },
-                    { name: 'removeDimensions', active: true },
-                    { name: 'removeScriptElement', active: true },
-                    { name: 'removeStyleElement', active: true },
-                ],
-            },
-        }),
-        compress({
-            algorithm: 'brotliCompress',
-        }),
-    ],
-}
+});
