@@ -1,7 +1,7 @@
 import * as VueRouter from "vue-router";
 
-import Home from "@pages/Home";
-import NotFound from "@pages/Not-Found";
+import Home from "@pages/home/index.vue";
+import NotFound from "@pages/not-found/index.vue";
 
 const routes = [
     {

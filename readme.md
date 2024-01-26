@@ -26,4 +26,4 @@ yarn build
 ```
 
 ### Notice
-Tailwind classes are prefixed with `tw-` and Vuetify classes are prefixed with `v-` to avoid conflicts.
+Tailwind classes are prefixed with `tw-` to avoid conflicts with Vuetify.
