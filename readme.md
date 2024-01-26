@@ -1,4 +1,4 @@
-# Symfony 7 + Vue 3 + Tailwind + Vuetify
+# Symfony 7 + Vue 3 + Vite + Tailwind + Vuetify
 
 ## Project setup
 
@@ -16,13 +16,13 @@ symfony serve -d
 ### Compiles and hot-reloads for development
 
 ```
-yarn hot
+vite
 ```
 
 ### Compiles and minifies for production
 
 ```
-yarn build
+vite build
 ```
 
 ### Notice
