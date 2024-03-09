@@ -26,4 +26,4 @@ vite build
 ```
 
 ### Notice
-Tailwind classes are prefixed with `tw-` to avoid conflicts with Vuetify.
+Tailwind classes are prefixed with `tw-` to avoid conflicts with other potential libraries (e.g. Quasar or Vuetify).
