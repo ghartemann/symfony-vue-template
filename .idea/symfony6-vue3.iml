@@ -107,11 +107,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php83" />
       <excludeFolder url="file://$MODULE_DIR$/var" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pentatrion/vite-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/type-info" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="0eb02faf-587c-4165-a7a3-c5d757f7a10a" />
   </component>
 </module>
