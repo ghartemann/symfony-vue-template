@@ -23,7 +23,7 @@ export default defineConfig({
             "@composables": `${__dirname}/assets/js/composables`,
             "@pages": `${__dirname}/assets/js/pages`,
             "@stores": `${__dirname}/assets/js/stores`,
-            "@images": `${__dirname}/assets/images`,
+            "@images": `${__dirname}/assets/images`
         }
     },
     css: {

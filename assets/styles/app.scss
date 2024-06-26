@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root, body {
+  overscroll-behavior: none;
+}
+
 #app {
   min-height: 100vh;
+
 }
