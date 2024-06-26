@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Merci Pelagoss pour le coup de main - https://github.com/Pelagoss
+
 sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i docker-compose.yml
 sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i .env
 sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i docker-compose.yml

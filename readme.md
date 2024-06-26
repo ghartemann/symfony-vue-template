@@ -8,7 +8,6 @@ Template pour un projet Symfony + Vue.js + Vite + TailwindCSS.
 
 ### Installer le projet :
 ```
-git clone <repo>
 yarn install
 composer install
 ```

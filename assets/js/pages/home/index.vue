@@ -1,10 +1,10 @@
 <template>
-    <div id="wp-bg">
+    <div id="wp-bg" class="tw-relative">
         <!-- SECTION 1 -->
         <div class="tw-w-full tw-min-h-screen tw-flex tw-flex-col tw-gap-10 tw-items-center tw-justify-center">
             <div class="tw-rounded-full tw-pt-5 tw-pb-7 tw-px-14 tw-text-center tw-bg-clip-padding tw-flex tw-flex-col tw-gap-2 tw-select-none tw-bg-white/10">
-                <h1 class="tw-text-4xl lg:tw-text-8xl tw-font-semibold tw-text-white">SymVue</h1>
-                <div class="tw-text-3xl tw-text-white">L'incroyable template v1.4</div>
+                <h1 class="tw-text-6xl lg:tw-text-8xl tw-font-semibold tw-text-white">SymVue</h1>
+                <div class="tw-text-2xl lg:tw-text-4xl tw-text-white">L'incroyable template</div>
             </div>
 
             <div class="tw-rounded-full tw-p-5 hover:tw-bg-white/10 tw-transition-all tw-cursor-pointer anim" @click="scrollToSection2">
@@ -17,7 +17,7 @@
         <!-- SECTION 2 -->
         <div id="section2" class="tw-w-full tw-min-h-screen tw-flex tw-items-center tw-justify-center">
             <div class="sm:tw-max-w-sm lg:tw-max-w-4xl tw-mx-auto">
-                <div class="tw-text-center tw-text-5xl tw-mb-16 tw-text-white">
+                <div class="tw-text-center tw-text-5xl tw-mb-16 tw-text-white tw-text-balance">
                     Pour commencer à coder <span class="tw-italic tw-font-semibold">vite</span>.
                 </div>
 
@@ -44,6 +44,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="tw-absolute tw-bottom-1 tw-left-1/2 -tw-translate-x-1/2 tw-text-sm">
+            © Guillaume Hartemann-Piollet - <a href="https://ghartemann.fr">ghartemann.fr</a>
+        </div>
     </div>
 </template>
 
@@ -62,6 +66,7 @@ const techs = [
         list: [
             'Symfony 7.1',
             'Vue.js 3.4',
+            'Nuxt.js 3 (optionnel)',
             'Vite'
         ]
     },

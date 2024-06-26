@@ -11,9 +11,10 @@ npm-debug.log
 yarn-error.log
 
 .DS_Store
-/.idea/sonarlint
+/.idea
+/.vscode
+/.phpstorm.meta.php
 
-###> pentatrion/vite-bundle ###
-/node_modules/
-/public/build/
-###< pentatrion/vite-bundle ###
+/.phpunit.result.cache
+/.phpunit-watcher.yml
+/.phpunit-watcher.yml.dist
