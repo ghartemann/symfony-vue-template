@@ -1,29 +1,44 @@
-# Symfony 7 + Vue 3 + Vite + Tailwind
+# Symvue : l'incroyable template
 
-## Project setup
+[symvue.ghartemann.fr](https://symvue.ghartemann.fr)
 
+Template pour un projet Symfony + Vue.js + Vite + TailwindCSS.
+
+## Tutoriel
+
+### Installer le projet :
 ```
+git clone <repo>
 yarn install
 composer install
 ```
 
-### Starts the symfony server
+### Configuration :
+Modifier les `TODO` dans les fichiers `docker-compose.yml` et `base.html.twig`.
+
+### Pour dev
+#### Démarrer le serveur Symfony
 
 ```
 symfony serve -d
 ```
 
-### Compiles and hot-reloads for development
+#### Lancer le hot-reload
 
 ```
-vite
+vite / yarn dev
 ```
 
-### Compiles and minifies for production
+### Pour deploy
+#### Créer un self-hosted runner
+[Doc Github](https://docs.github.com/fr/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
 
+#### Commit et tag une version
 ```
-vite build
+git tag <version> && git push origin --tags
 ```
+
+Le déploiement se lance automatiquement au tag.
 
 ### Notice
 Tailwind classes are prefixed with `tw-` to avoid conflicts with other potential libraries (e.g. Quasar or Vuetify).
