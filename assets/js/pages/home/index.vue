@@ -1,13 +1,15 @@
 <template>
     <div id="wp-bg" class="tw-relative">
         <!-- SECTION 1 -->
-        <div class="tw-w-full tw-min-h-screen tw-flex tw-flex-col tw-gap-10 tw-items-center tw-justify-center">
+        <div class="tw-w-full tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-relative">
             <div class="tw-rounded-full tw-pt-5 tw-pb-7 tw-px-14 tw-text-center tw-bg-clip-padding tw-flex tw-flex-col tw-gap-2 tw-select-none tw-bg-white/10">
                 <h1 class="tw-text-6xl lg:tw-text-8xl tw-font-semibold tw-text-white">SymVue</h1>
                 <div class="tw-text-2xl lg:tw-text-4xl tw-text-white">L'incroyable template</div>
             </div>
 
-            <div class="tw-rounded-full tw-p-5 hover:tw-bg-white/10 tw-transition-all tw-cursor-pointer anim" @click="scrollToSection2">
+            <div>{{ Gr.pluralise('cheval', 2) }}</div>
+
+            <div class="tw-absolute tw-bottom-64 tw-rounded-full tw-p-5 hover:tw-bg-white/10 tw-transition-all tw-cursor-pointer anim" @click="scrollToSection2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6z"/>
                 </svg>
@@ -52,6 +54,7 @@
 </template>
 
 <script setup>
+import { Gr } from "grammaire"
 const techs = [
     {
         label: 'CSS facilité',
