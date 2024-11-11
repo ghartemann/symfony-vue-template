@@ -7,8 +7,6 @@
                 <div class="tw-text-2xl lg:tw-text-4xl tw-text-white">L'incroyable template</div>
             </div>
 
-            <div>{{ Gr.pluralise('cheval', 2) }}</div>
-
             <div class="tw-absolute tw-bottom-64 tw-rounded-full tw-p-5 hover:tw-bg-white/10 tw-transition-all tw-cursor-pointer anim" @click="scrollToSection2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6z"/>
@@ -54,7 +52,6 @@
 </template>
 
 <script setup>
-import { Gr } from "grammaire"
 const techs = [
     {
         label: 'CSS facilité',
