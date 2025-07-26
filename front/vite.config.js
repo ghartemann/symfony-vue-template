@@ -14,17 +14,18 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                app: "./assets/app.js"
+                app: "./src/app.js"
             }
-        }
+        },
+        outDir: '../back/public/build',
     },
     resolve: {
         alias: {
-            "@": `${__dirname}/assets`,
-            "@components": `${__dirname}/assets/js/components`,
-            "@composables": `${__dirname}/assets/js/composables`,
-            "@pages": `${__dirname}/assets/js/pages`,
-            "@stores": `${__dirname}/assets/js/stores`,
+            "@": `${__dirname}/`,
+            "@components": `${__dirname}/src/components`,
+            "@composables": `${__dirname}/src/composables`,
+            "@pages": `${__dirname}/src/pages`,
+            "@store": `${__dirname}/src/store`,
             "@images": `${__dirname}/assets/images`
         }
     }

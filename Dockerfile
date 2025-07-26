@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y git zip unzip acl
 RUN curl -o /usr/local/bin/composer https://getcomposer.org/download/2.2.6/composer.phar \
  && chmod +x /usr/local/bin/composer
 
-COPY . /app/
+COPY back/ /app/
 
 RUN composer install -a --no-dev --no-interaction
 
@@ -27,10 +27,7 @@ RUN apt-get update && apt-get install -y yarn
 
 WORKDIR /app
 
-COPY assets /app/assets
-COPY package.* /app/
-COPY yarn.* /app/
-COPY *.js /app/
+COPY front/ /app/
 
 RUN yarn install
 RUN yarn build
@@ -53,7 +50,7 @@ RUN a2enmod rewrite
 #Build
 COPY .deploy/vhosts.$ENV.conf /etc/apache2/sites-available/000-default.conf
 COPY --from=composer /app/vendor /var/www/html/vendor
-COPY . /var/www/html/
+COPY back/ /var/www/html/
 COPY --from=yarn /app/public/build /var/www/html/public/build
 
 EXPOSE 80

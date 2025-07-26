@@ -1,4 +1,4 @@
-import './styles/app.css';
+import '../assets/styles/app.css';
 
 import { createApp } from 'vue';
 import App from '@pages/App.vue';
@@ -6,7 +6,7 @@ import App from '@pages/App.vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 
-import router from "@/js/router";
+import router from "@/src/router";
 
 import '@mdi/font/css/materialdesignicons.css';
 

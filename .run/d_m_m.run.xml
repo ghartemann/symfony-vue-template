@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="d:m:m" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="d:m:m --no-interaction">
+  <configuration default="false" name="d:m:m" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/back/bin/console" scriptParameters="d:m:m --no-interaction">
     <method v="2" />
   </configuration>
 </component>

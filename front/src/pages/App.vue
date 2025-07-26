@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { useUserStore } from "../store/userStore.js";
+import { useUserStore } from "@store/userStore.js";
 
 useUserStore().fetch();
 </script>

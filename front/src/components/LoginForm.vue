@@ -95,7 +95,7 @@ import { reactive, ref } from "vue";
 import TextField from "@components/form/TextField.vue";
 import PasswordField from "@components/form/PasswordField.vue";
 import LoginRegisterButtons from "@components/form/LoginRegisterButtons.vue";
-import { useUserStore } from "@/js/store/userStore.js";
+import { useUserStore } from "@store/userStore.js";
 import { storeToRefs } from "pinia";
 
 const { isLoggedIn } = storeToRefs(useUserStore());
