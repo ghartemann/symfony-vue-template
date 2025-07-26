@@ -1,11 +1,13 @@
 <template>
-    <div class="tw-h-full">
+    <UApp>
         <router-view></router-view>
-    </div>
+    </UApp>
 </template>
 
 <script setup>
+import { useUserStore } from "../store/userStore.js";
 
+useUserStore().fetch();
 </script>
 
 <style scoped>

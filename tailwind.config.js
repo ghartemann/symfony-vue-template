@@ -5,7 +5,6 @@ module.exports = {
         "./assets/**/*.vue",
         "./templates/**/*.html.twig",
     ],
-    prefix: "tw-",
     theme: {
         extend: {},
     },

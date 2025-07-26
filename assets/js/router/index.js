@@ -1,19 +1,16 @@
 import * as VueRouter from "vue-router";
 
-import Home from "@pages/home/index.vue";
-import NotFound from "@pages/not-found/index.vue";
-
 const routes = [
     {
         path: "/",
         name: "homepage",
-        component: Home,
+        component: () => import("@pages/home/index.vue"),
     },
     // insert new routes here
     {
         path: '/:pathMatch(.*)*',
         name: 'not-found',
-        component: NotFound
+        component: () => import("@pages/not-found/index.vue"),
     },
 ];
 

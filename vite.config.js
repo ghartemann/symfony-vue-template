@@ -1,13 +1,15 @@
 import {defineConfig} from "vite";
 import symfonyPlugin from "vite-plugin-symfony";
-import tailwindcss from "tailwindcss";
-import postcss from "postcss";
 import vuePlugin from "@vitejs/plugin-vue";
+import tailwindcss from "@tailwindcss/vite";
+import ui from '@nuxt/ui/vite';
 
 export default defineConfig({
     plugins: [
         vuePlugin(),
-        symfonyPlugin()
+        symfonyPlugin(),
+        tailwindcss(),
+        ui()
     ],
     build: {
         rollupOptions: {
@@ -25,13 +27,5 @@ export default defineConfig({
             "@stores": `${__dirname}/assets/js/stores`,
             "@images": `${__dirname}/assets/images`
         }
-    },
-    css: {
-        postcss: {
-            plugins: [
-                postcss(),
-                tailwindcss
-            ],
-        },
-    },
+    }
 });

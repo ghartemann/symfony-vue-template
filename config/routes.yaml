@@ -1,5 +1,15 @@
-controllers:
+api:
+    prefix: /api
     resource:
-        path: ../src/Controller/
-        namespace: App\Controller
+        path: ../src/Controller/Api
+        namespace: App\Controller\Api
     type: attribute
+
+controllers:
+    prefix: /
+    resource:
+        path: ../src/Controller/EntryVue
+        namespace: App\Controller\EntryVue
+    type: attribute
+    requirements:
+        route: '^.+'

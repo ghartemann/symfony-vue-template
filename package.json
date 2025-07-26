@@ -7,21 +7,23 @@
     },
     "devDependencies": {
         "@types/node": "^20.14.9",
-        "vite": "^5.3.1",
-        "vite-plugin-symfony": "^6.4.7"
+        "vite": "6.3.4",
+        "vite-plugin-symfony": "^7"
     },
     "dependencies": {
         "@mdi/font": "^7.4.47",
+        "@nuxt/ui": "^3.3.0",
+        "@tailwindcss/vite": "^4.1.11",
         "@vitejs/plugin-vue": "^5.0.5",
-        "autoprefixer": "^10.4.19",
-        "axios": "^1.7.2",
+        "axios": "1.11.0",
         "pinia": "^2.1.7",
-        "postcss": "^8.4.38",
+        "rbush": "^4.0.1",
         "sass": "^1.77.6",
         "sass-loader": "^14.2.1",
-        "tailwindcss": "^3.4.4",
-        "vue": "^3.4.30",
+        "tailwindcss": "^4.1.11",
+        "typescript": "^5.8.3",
+        "vue": "^3.5.18",
         "vue-axios": "^3.5.2",
-        "vue-router": "^4.4.0"
+        "vue-router": "^4.5.1"
     }
 }
