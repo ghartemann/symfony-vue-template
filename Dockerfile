@@ -37,6 +37,8 @@ COPY front/ /app/front/
 COPY back/public /app/back/public
 
 RUN yarn install
+RUN chown -R 1000:1000 node_modules
+RUN chmod -R 775 node_modules
 RUN yarn build --emptyOutDir
 
 #Packaging
