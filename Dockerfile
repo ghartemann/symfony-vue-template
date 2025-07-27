@@ -59,7 +59,7 @@ RUN a2enmod rewrite
 
 #Build
 COPY .deploy/vhosts.$ENV.conf /etc/apache2/sites-available/000-default.conf
-COPY --from=composer /app/back/vendor /var/www/html/vendor
+COPY --from=composer /app/vendor /var/www/html/vendor
 COPY back/ /var/www/html/
 COPY --from=yarn /app/back/public/build /var/www/html/public/build
 
