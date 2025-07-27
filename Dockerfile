@@ -7,7 +7,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 
 WORKDIR /app
 RUN apt-get update  \
-    && apt-get install -y git zip unzip acl \
+    && apt-get install -y git zip unzip acl
 
 #Composer
 RUN curl -o /usr/local/bin/composer https://getcomposer.org/download/2.2.6/composer.phar \
