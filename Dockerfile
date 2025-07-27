@@ -40,6 +40,7 @@ COPY front/ /app/
 
 RUN yarn install
 
+RUN mkdir -p /app/back/public
 COPY back/public /app/back/public
 RUN yarn build --emptyOutDir
 
