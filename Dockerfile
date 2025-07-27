@@ -34,13 +34,12 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 RUN apt-get update  \
     && apt-get install -y yarn
 
-WORKDIR /app
+WORKDIR /app/front
 
 COPY front/ /app/front/
 COPY back/public /app/back/public
 
 RUN yarn install
-WORKDIR /app/front
 RUN yarn build --emptyOutDir
 
 #Packaging
