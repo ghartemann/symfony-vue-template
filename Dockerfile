@@ -39,6 +39,8 @@ WORKDIR /app
 COPY front/ /app/
 
 RUN yarn install
+
+COPY back/public /app/back/public
 RUN yarn build --emptyOutDir
 
 #Packaging
