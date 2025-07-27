@@ -37,7 +37,7 @@ WORKDIR /app
 COPY front/ /app/
 
 RUN yarn install
-RUN yarn build
+RUN yarn build --emptyOutDir
 
 #Packaging
 FROM php:8.3.6-apache
