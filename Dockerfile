@@ -37,11 +37,9 @@ RUN apt-get update  \
 WORKDIR /app
 
 COPY front/ /app/
+COPY back/public /app/back/public
 
 RUN yarn install
-
-RUN mkdir -p /app/back/public
-COPY back/public /app/back/public
 RUN yarn build --emptyOutDir
 
 #Packaging
