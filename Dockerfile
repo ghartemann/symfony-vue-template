@@ -6,10 +6,12 @@ ENV APP_ENV=$ENV
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 WORKDIR /app
-RUN apt-get update && apt-get install -y git zip unzip acl
+RUN apt-get update  \
+    && apt-get install -y git zip unzip acl \
+
 #Composer
 RUN curl -o /usr/local/bin/composer https://getcomposer.org/download/2.2.6/composer.phar \
- && chmod +x /usr/local/bin/composer
+    && chmod +x /usr/local/bin/composer
 
 COPY back/ /app/
 
@@ -57,9 +59,9 @@ RUN a2enmod rewrite
 
 #Build
 COPY .deploy/vhosts.$ENV.conf /etc/apache2/sites-available/000-default.conf
-COPY --from=composer /app/vendor /var/www/html/vendor
+COPY --from=composer /app/back/vendor /var/www/html/vendor
 COPY back/ /var/www/html/
-COPY --from=yarn /app/public/build /var/www/html/public/build
+COPY --from=yarn /app/back/public/build /var/www/html/public/build
 
 EXPOSE 80
 
