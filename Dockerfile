@@ -36,10 +36,11 @@ RUN apt-get update  \
 
 WORKDIR /app
 
-COPY front/ /app/
+COPY front/ /app/front/
 COPY back/public /app/back/public
 
 RUN yarn install
+WORKDIR /app/front
 RUN yarn build --emptyOutDir
 
 #Packaging
