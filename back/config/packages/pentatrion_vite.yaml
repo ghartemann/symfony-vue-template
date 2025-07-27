@@ -1,6 +1,5 @@
 pentatrion_vite:
-  configs:
-    default:
-      public_directory: ../front/public
-      build_directory: build
-      dev_server_url: http://127.0.0.1:5173
+    default_config: default
+    configs:
+        default:
+            build_directory: build
