@@ -22,9 +22,9 @@ export default defineConfig({
     resolve: {
         alias: {
             "@": `${__dirname}/`,
+            "@pages": `${__dirname}/src/pages`,
             "@components": `${__dirname}/src/components`,
             "@composables": `${__dirname}/src/composables`,
-            "@pages": `${__dirname}/src/pages`,
             "@store": `${__dirname}/src/store`,
             "@images": `${__dirname}/assets/images`
         }

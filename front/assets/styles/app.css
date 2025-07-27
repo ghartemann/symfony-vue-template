@@ -1,14 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-:root, body {
-  overscroll-behavior: none;
+#app {
+  min-height: 100vh;
 }
 
 button {
   cursor: pointer;
-}
-
-#app {
-  min-height: 100vh;
 }
