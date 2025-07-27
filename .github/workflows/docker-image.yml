@@ -7,22 +7,10 @@ on:
 
 jobs:
     build:
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         steps:
             -   uses: actions/checkout@v3
             -   name: Build the Docker image
                 run: sudo docker compose build --build-arg ENV=prod
             -   name: Create and start container
                 run: sudo docker compose create && sudo docker compose start
-            -   name: Check the container
-                run: sudo docker ps
-            -   name: Check the logs
-                run: sudo docker logs cv-2024
-            -   name: Check the network
-                run: sudo docker network ls
-            -   name: Check the volumes
-                run: sudo docker volume ls
-            -   name: Check the images
-                run: sudo docker image ls
-            -   name: Check the containers
-                run: sudo docker container ls
