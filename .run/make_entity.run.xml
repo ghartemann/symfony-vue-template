@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="make:entity" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="make:entity">
+  <configuration default="false" name="make:entity" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/back/bin/console" scriptParameters="make:entity">
     <method v="2" />
   </configuration>
 </component>

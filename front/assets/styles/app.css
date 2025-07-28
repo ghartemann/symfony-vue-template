@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+#app {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}

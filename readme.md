@@ -38,6 +38,3 @@ git tag <version> && git push origin --tags
 ```
 
 Le déploiement se lance automatiquement au tag.
-
-### Notice
-Tailwind classes are prefixed with `tw-` to avoid conflicts with other potential libraries (e.g. Quasar or Vuetify).

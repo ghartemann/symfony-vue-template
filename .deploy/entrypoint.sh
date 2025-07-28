@@ -3,11 +3,15 @@
 #Merci Pelagoss pour le coup de main - https://github.com/Pelagoss
 
 sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i docker-compose.yml
-sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i .env
 sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i docker-compose.yml
-sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i .env
 sed 's/$POSTGRES_USER/'"$POSTGRES_USER"'/' -i docker-compose.yml
-sed 's/$POSTGRES_USER/'"$POSTGRES_USER"'/' -i .env
+
+sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i ./back/.env
+sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i ./back/.env.prod
+sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i ./back/.env
+sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i ./back/.env.prod
+sed 's/$POSTGRES_USER/'"$POSTGRES_USER"'/' -i ./back/.env
+sed 's/$POSTGRES_USER/'"$POSTGRES_USER"'/' -i ./back/.env.prod
 
 #TODO : ajouter les variables pour :
 # container_name dans docker_compose.yml

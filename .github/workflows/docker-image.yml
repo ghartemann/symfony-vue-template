@@ -5,24 +5,19 @@ on:
         tags:
             - '*'
 
+env:
+    POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
+    POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+    POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+
 jobs:
     build:
         runs-on: self-hosted
         steps:
             -   uses: actions/checkout@v3
+            -   name: Setup environment
+                run: chmod u+x .deploy/entrypoint.sh && .deploy/entrypoint.sh
             -   name: Build the Docker image
                 run: sudo docker compose build --build-arg ENV=prod
             -   name: Create and start container
                 run: sudo docker compose create && sudo docker compose start
-            -   name: Check the container
-                run: sudo docker ps
-            -   name: Check the logs
-                run: sudo docker logs cv-2024
-            -   name: Check the network
-                run: sudo docker network ls
-            -   name: Check the volumes
-                run: sudo docker volume ls
-            -   name: Check the images
-                run: sudo docker image ls
-            -   name: Check the containers
-                run: sudo docker container ls
