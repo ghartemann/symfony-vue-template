@@ -5,11 +5,11 @@ api:
         namespace: App\Controller\Api
     type: attribute
 
-controllers:
+index:
     prefix: /
     resource:
         path: ../src/Controller/EntryVue
         namespace: App\Controller\EntryVue
     type: attribute
-#    requirements:
-#        route: '^.+'
+    requirements:
+        route: '^.+'
