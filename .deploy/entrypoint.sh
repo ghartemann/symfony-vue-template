@@ -2,8 +2,6 @@
 
 #Merci Pelagoss pour le coup de main - https://github.com/Pelagoss
 
-pwd > /var/log/test.log
-
 sed 's/$POSTGRES_DB/'"$POSTGRES_DB"'/' -i docker-compose.yml
 sed 's/$POSTGRES_PASSWORD/'"$POSTGRES_PASSWORD"'/' -i docker-compose.yml
 sed 's/$POSTGRES_USER/'"$POSTGRES_USER"'/' -i docker-compose.yml
