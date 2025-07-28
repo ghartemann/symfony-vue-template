@@ -16,7 +16,7 @@ jobs:
         steps:
             -   uses: actions/checkout@v3
             -   name: Setup environment
-                run: ls -a && chmod u+x .deploy/entrypoint.sh && .deploy/entrypoint.sh
+                run: chmod u+x .deploy/entrypoint.sh && .deploy/entrypoint.sh
             -   name: Build the Docker image
                 run: sudo docker compose build --build-arg ENV=prod
             -   name: Create and start container

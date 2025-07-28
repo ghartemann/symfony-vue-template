@@ -12,4 +12,4 @@ index:
         namespace: App\Controller\EntryVue
     type: attribute
     requirements:
-        route: '^.+'
+        route: '^(?!api).*'

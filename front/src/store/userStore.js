@@ -17,12 +17,6 @@ export const useUserStore = defineStore('user', () => {
         }).finally(() => {
             loading.value = false;
         });
-
-        await axios.get('/api/test').then((r) => {
-            console.log(r.data);
-        }).catch((e) => {
-            console.error(e);
-        });
     }
 
     function login(username, password) {
